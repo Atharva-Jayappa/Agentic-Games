@@ -1,0 +1,36 @@
+{
+    "player": {
+        "inventory": [
+            "small_key"
+        ]
+    },
+    "objects": {
+        "small_key": {
+            "visible": false,
+            "description": "A small brass key lying on the floor."
+        },
+        "box": {
+            "visible": true,
+            "opened": true,
+            "locked": false,
+            "key_required": "small_key",
+            "contains": [
+                "note"
+            ],
+            "description": "A locked metal box."
+        },
+        "note": {
+            "visible": true,
+            "readable": true,
+            "content": "Code: 1234",
+            "description": "A folded note."
+        },
+        "door": {
+            "visible": true,
+            "locked": false,
+            "code_required": "1234",
+            "description": "A heavy metal door with a keypad.",
+            "opened": true
+        }
+    }
+}
